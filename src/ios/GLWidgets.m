@@ -3,7 +3,7 @@
 
 @implementation GLWidgets
 
--(void)gliaWidgets(CDVInvokedUrlCommand *)command {
+-(void)gliaWidgets:(CDVInvokedUrlCommand *)command {
     CDVPluginResult* pluginResult = nil;
     NSString* echo = [command.arguments objectAtIndex:0];
 

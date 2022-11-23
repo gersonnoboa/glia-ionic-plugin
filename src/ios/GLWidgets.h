@@ -4,6 +4,6 @@
 
 @interface GLWidgets: CDVPlugin {}
 
--(void)gliaWidgets(CDVInvokedUrlCommand *)command;
+-(void)gliaWidgets:(CDVInvokedUrlCommand *)command;
 
 @end
