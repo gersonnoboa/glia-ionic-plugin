@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="glia-widgets" version="0.1.0">
+    <name>Glia Widgets</name>
+    <description>Glia Widgets plugin</description>
+    <license>MIT</license>
+    <keywords>glia,widgets</keywords>
+    <js-module src="www/GliaWidgets.js" name="GliaWidgets">
+        <clobbers target="window.GliaWidgets" />
+    </js-module>
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="GliaWidgets">
+                <param name="ios-package" value="GLWidgets"/>
+            </feature>
+        </config-file>
+        <header-file src="src/ios/GLWidgets.h" />
+        <source-file src="src/ios/GLWidgets.m" />
+    </platform>
+</plugin>
